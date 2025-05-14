@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState('Loading...');
 
   useEffect(() => {
-      fetch('http://localhost:3001/api')
+      fetch('https://render-i5kl.onrender.com/api')
       .then(res => res.json())
       .then(data => setMessage(data.time))
       .catch(() => setMessage('Error fetching from backend'));
@@ -12,9 +12,10 @@ function App() {
 
   
   return (
-    <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-      <h1>Frontend</h1>
+    <div>
+      <p>Frontend part: <strong>static</strong></p>
       <p>Backend says: <strong>{message}</strong></p>
+      <p><strong>Brylinskyi Mykhailo</strong></p>
     </div>
   );
 }

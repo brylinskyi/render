@@ -12,7 +12,7 @@ app.get('/api', (req, res) => {
     time: new Date().toISOString(),
     user: {
       id: 123,
-      name: 'Alice',
+      name: 'admin_test',
       role: 'admin'
    }
   });
